@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catálogo Atual Tintas — Cores Reais</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f8f9fa;color:#222}
+header{
+  background:#002b5c;
+  color:white;
+  padding:18px;
+  text-align:center; 
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.header-brand{margin:0;}
+main{max-width:1200px;margin:28px auto;padding:20px}
+
+/* --- TÍTULOS E LOGOS --- */
+h2{
+  color:#004aad;
+  border-bottom:3px solid #e6eefc;
+  padding-bottom:8px;
+  display:flex;
+  align-items:center;
+  gap:15px;
+  font-size:1.8rem;
+}
+.h2-image{height:99px;width:auto;object-fit:contain;}
+.header-logo{max-height:80px;width:auto;}
+
+/* --- GRID E CARTÕES DE CORES --- */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:18px;margin-top:18px}
+.card{background:white;border-radius:8px;overflow:hidden;box-shadow:0 3px 10px rgba(0,0,0,0.06);text-align:center}
+.swatch{height:90px;cursor:pointer;transition:transform 0.2s}
+.swatch:hover{transform:scale(1.05);}
+.label{padding:10px;font-weight:700;font-size:0.95rem}
+
+/* --- FOOTER --- */
+.footer{background:#002b5c;color:white;padding:24px;text-align:center;margin-top:30px}
+.whatsapp-btn{display:inline-flex;align-items:center;gap:8px;margin-top:12px;padding:10px 16px;background:#25D366;color:white;border-radius:8px;text-decoration:none;font-weight:700}
+
+/* --- WhatsApp Flutuante --- */
+.whatsapp-container{position:fixed;bottom:20px;right:20px;z-index:999}
+.whatsapp-balao{
+  background:#fff;color:#333;padding:10px 15px;border-radius:12px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.2);margin-bottom:8px;max-width:220px;font-size:14px;position:relative;
+}
+.whatsapp-balao::after{
+  content:"";position:absolute;bottom:-8px;left:20px;border-width:8px;border-style:solid;border-color:#fff transparent transparent transparent;
+}
+.whatsapp-botao{
+  background:#25d366;border-radius:50%;width:60px;height:60px;display:flex;
+  align-items:center;justify-content:center;box-shadow:0 4px 10px rgba(0,0,0,0.3);transition:transform 0.2s ease-in-out;
+}
+.whatsapp-botao:hover{transform:scale(1.1);}
+.whatsapp-botao img{width:35px;height:35px;}
+</style>
+
+</head>
+<body>
+<header>
+  <div class="header-brand">
+    <img src="logo.png" alt="Logo Atual Tintas" class="header-logo">
+  </div>
+</header>
+
+<main>
+
+  <!-- LINHA ACRÍLICA -->
+  <section>
+    <h2>
+      <img src="lata-acrilica.png" alt="Lata Linha Acrílica" class="h2-image">
+      <span>LINHA ACRÍLICA</span>
+    </h2>
+
+
+    <div class="grid" id="acrilica-grid">
+      <div class="card"><div class="swatch" style="background:#ffffff"></div><div class="label">Branco</div></div>
+      <div class="card"><div class="swatch" style="background:#e6e6e6"></div><div class="label">Gelo</div></div>
+      <div class="card"><div class="swatch" style="background:#f1d9a6"></div><div class="label">Areia</div></div>
+      <div class="card"><div class="swatch" style="background:#f5e7c6"></div><div class="label">Marfim</div></div>
+      <div class="card"><div class="swatch" style="background:#f8b19a"></div><div class="label">Pêssego</div></div>
+      <div class="card"><div class="swatch" style="background:#a9d6f9"></div><div class="label">Azul Nascente</div></div>
+      <div class="card"><div class="swatch" style="background:#f6ebc1"></div><div class="label">Palha</div></div>
+      <div class="card"><div class="swatch" style="background:#d2e2be"></div><div class="label">Cromo Suave</div></div>
+      <div class="card"><div class="swatch" style="background:#80caff"></div><div class="label">Azul Céu</div></div>
+      <div class="card"><div class="swatch" style="background:#ffe95c"></div><div class="label">Amarelo Canário</div></div>
+      <div class="card"><div class="swatch" style="background:#fdf0e2"></div><div class="label">Pérola</div></div>
+      <div class="card"><div class="swatch" style="background:#7dd5e9"></div><div class="label">Piscina</div></div>
+      <div class="card"><div class="swatch" style="background:#b8926a"></div><div class="label">Camurça</div></div>
+      <div class="card"><div class="swatch" style="background:#bcbcbc"></div><div class="label">Prata</div></div>
+      <div class="card"><div class="swatch" style="background:#c9a9dd"></div><div class="label">Lilás</div></div>
+      <div class="card"><div class="swatch" style="background:#f9a9c0"></div><div class="label">Rosa</div></div>
+      <div class="card"><div class="swatch" style="background:#d2e7ba"></div><div class="label">Erva Doce</div></div>
+      <div class="card"><div class="swatch" style="background:#a0a0a0"></div><div class="label">Cinza Médio</div></div>
+      <div class="card"><div class="swatch" style="background:#999888"></div><div class="label">Concreto</div></div>
+      <div class="card"><div class="swatch" style="background:#0f1a44"></div><div class="label">Azul Profundo</div></div>
+    </div>
+  </section>
+
+  <!-- LINHA IMPERATUAL PAREDE (mesmas cores da Acrílica) -->
+  <section>
+    <h2>
+      <img src="lata-imperatual.png" alt="Lata Imperatual Parede" class="h2-image">
+      <span>LINHA IMPERATUAL PAREDE</span>
+    </h2>
+
+    <div class="grid" id="imperatual-grid">
+      <!-- copiadas as mesmas cores da Acrílica -->
+      <div class="card"><div class="swatch" style="background:#ffffff"></div><div class="label">Branco</div></div>
+      <div class="card"><div class="swatch" style="background:#e6e6e6"></div><div class="label">Gelo</div></div>
+      <div class="card"><div class="swatch" style="background:#f1d9a6"></div><div class="label">Areia</div></div>
+      <div class="card"><div class="swatch" style="background:#f5e7c6"></div><div class="label">Marfim</div></div>
+      <div class="card"><div class="swatch" style="background:#f8b19a"></div><div class="label">Pêssego</div></div>
+      <div class="card"><div class="swatch" style="background:#a9d6f9"></div><div class="label">Azul Nascente</div></div>
+      <div class="card"><div class="swatch" style="background:#f6ebc1"></div><div class="label">Palha</div></div>
+      <div class="card"><div class="swatch" style="background:#d2e2be"></div><div class="label">Cromo Suave</div></div>
+      <div class="card"><div class="swatch" style="background:#80caff"></div><div class="label">Azul Céu</div></div>
+      <div class="card"><div class="swatch" style="background:#ffe95c"></div><div class="label">Amarelo Canário</div></div>
+      <div class="card"><div class="swatch" style="background:#fdf0e2"></div><div class="label">Pérola</div></div>
+      <div class="card"><div class="swatch" style="background:#7dd5e9"></div><div class="label">Piscina</div></div>
+      <div class="card"><div class="swatch" style="background:#b8926a"></div><div class="label">Camurça</div></div>
+      <div class="card"><div class="swatch" style="background:#bcbcbc"></div><div class="label">Prata</div></div>
+      <div class="card"><div class="swatch" style="background:#c9a9dd"></div><div class="label">Lilás</div></div>
+      <div class="card"><div class="swatch" style="background:#f9a9c0"></div><div class="label">Rosa</div></div>
+      <div class="card"><div class="swatch" style="background:#d2e7ba"></div><div class="label">Erva Doce</div></div>
+      <div class="card"><div class="swatch" style="background:#a0a0a0"></div><div class="label">Cinza Médio</div></div>
+      <div class="card"><div class="swatch" style="background:#999888"></div><div class="label">Concreto</div></div>
+      <div class="card"><div class="swatch" style="background:#0f1a44"></div><div class="label">Azul Profundo</div></div>
+    </div>
+  </section>
+
+  <!-- LINHA BORRACHA LÍQUIDA (mesmas cores da Acrílica, mesma foto de embalagem) -->
+  <section>
+    <h2>
+      <img src="lata-imperatual.png" alt="Lata Borracha Líquida" class="h2-image">
+      <span>BORRACHA LÍQUIDA</span>
+    </h2>
+
+    <div class="grid" id="borracha-grid">
+      <!-- mesmas cores da Acrílica -->
+      <div class="card"><div class="swatch" style="background:#ffffff"></div><div class="label">Branco</div></div>
+      <div class="card"><div class="swatch" style="background:#e6e6e6"></div><div class="label">Gelo</div></div>
+      <div class="card"><div class="swatch" style="background:#f1d9a6"></div><div class="label">Areia</div></div>
+      <div class="card"><div class="swatch" style="background:#f5e7c6"></div><div class="label">Marfim</div></div>
+      <div class="card"><div class="swatch" style="background:#f8b19a"></div><div class="label">Pêssego</div></div>
+      <div class="card"><div class="swatch" style="background:#a9d6f9"></div><div class="label">Azul Nascente</div></div>
+      <div class="card"><div class="swatch" style="background:#f6ebc1"></div><div class="label">Palha</div></div>
+      <div class="card"><div class="swatch" style="background:#d2e2be"></div><div class="label">Cromo Suave</div></div>
+      <div class="card"><div class="swatch" style="background:#80caff"></div><div class="label">Azul Céu</div></div>
+      <div class="card"><div class="swatch" style="background:#ffe95c"></div><div class="label">Amarelo Canário</div></div>
+      <div class="card"><div class="swatch" style="background:#fdf0e2"></div><div class="label">Pérola</div></div>
+      <div class="card"><div class="swatch" style="background:#7dd5e9"></div><div class="label">Piscina</div></div>
+      <div class="card"><div class="swatch" style="background:#b8926a"></div><div class="label">Camurça</div></div>
+      <div class="card"><div class="swatch" style="background:#bcbcbc"></div><div class="label">Prata</div></div>
+      <div class="card"><div class="swatch" style="background:#c9a9dd"></div><div class="label">Lilás</div></div>
+      <div class="card"><div class="swatch" style="background:#f9a9c0"></div><div class="label">Rosa</div></div>
+      <div class="card"><div class="swatch" style="background:#d2e7ba"></div><div class="label">Erva Doce</div></div>
+      <div class="card"><div class="swatch" style="background:#a0a0a0"></div><div class="label">Cinza Médio</div></div>
+      <div class="card"><div class="swatch" style="background:#999888"></div><div class="label">Concreto</div></div>
+      <div class="card"><div class="swatch" style="background:#0f1a44"></div><div class="label">Azul Profundo</div></div>
+    </div>
+  </section>
+
+  <!-- LINHA MANTA LÍQUIDA (foto da embalagem = lata-imperatual.png) -->
+  <section>
+    <h2>
+      <img src="lata-imperatual.png" alt="Lata Manta Líquida" class="h2-image">
+      <span>MANTA LÍQUIDA</span>
+    </h2>
+
+    <div class="grid" id="manta-grid">
+      <div class="card"><div class="swatch" style="background:#ffffff"></div><div class="label">Branco</div></div>
+      <div class="card"><div class="swatch" style="background:#a0a0a0"></div><div class="label">Cinza</div></div>
+    </div>
+  </section>
+
+  <!-- LINHA EPÓXI (mantida igual) -->
+  <section>
+    <h2>
+      <img src="lata-epoxi.png" alt="Lata Linha Epóxi" class="h2-image">
+      <span>LINHA EPÓXI</span>
+    </h2>
+
+    <div class="grid" id="epoxi-grid">
+      <div class="card"><div class="swatch" style="background:#fdfdfd"></div><div class="label">Branco</div></div>
+      <div class="card"><div class="swatch" style="background:#e6e6e6"></div><div class="label">Gelo</div></div>
+      <div class="card"><div class="swatch" style="background:#e0c997"></div><div class="label">Areia</div></div>
+      <div class="card"><div class="swatch" style="background:#999999"></div><div class="label">Platina</div></div>
+      <div class="card"><div class="swatch" style="background:#f25c1d"></div><div class="label">Laranja</div></div>
+      <div class="card"><div class="swatch" style="background:#ffd21c"></div><div class="label">Amarelo Segurança</div></div>
+      <div class="card"><div class="swatch" style="background:#e4162c"></div><div class="label">Vermelho Segurança</div></div>
+      <div class="card"><div class="swatch" style="background:#0073cf"></div><div class="label">Azul Segurança</div></div>
+      <div class="card"><div class="swatch" style="background:#7b4a1d"></div><div class="label">Conhaque</div></div>
+      <div class="card"><div class="swatch" style="background:#254117"></div><div class="label">Verde Colonial</div></div>
+      <div class="card"><div class="swatch" style="background:#1c2c59"></div><div class="label">Azul Del Rey</div></div>
+      <div class="card"><div class="swatch" style="background:#1f4019"></div><div class="label">Verde Folha</div></div>
+      <div class="card"><div class="swatch" style="background:#6d1915"></div><div class="label">Vermelho Goya</div></div>
+      <div class="card"><div class="swatch" style="background:#222"></div><div class="label">Preto Semi Fosco</div></div>
+      <div class="card"><div class="swatch" style="background:#b5b9b5"></div><div class="label">Cinza Claro</div></div>
+      <div class="card"><div class="swatch" style="background:#000"></div><div class="label">Preto</div></div>
+      <div class="card"><div class="swatch" style="background:#9d9d9d"></div><div class="label">Alumínio</div></div>
+      <div class="card"><div class="swatch" style="background:#111"></div><div class="label">Preto Fosco</div></div>
+      <div class="card"><div class="swatch" style="background:#555"></div><div class="label">Cinza Escuro</div></div>
+      <div class="card"><div class="swatch" style="background:#b39966"></div><div class="label">Ouro Antigo</div></div>
+    </div>
+  </section>
+
+  <!-- LINHA ESMALTE SINTÉTICO (mesmas cores do Epoxi; embalagem = lata-epoxi.png) -->
+  <section>
+    <h2>
+      <img src="lata-epoxi.png" alt="Lata Esmalte Sintético" class="h2-image">
+      <span>ESMALTE SINTÉTICO</span>
+    </h2>
+
+    <div class="grid" id="esmalte-grid">
+      <!-- mesmas cores do Epoxi -->
+      <div class="card"><div class="swatch" style="background:#fdfdfd"></div><div class="label">Branco</div></div>
+      <div class="card"><div class="swatch" style="background:#e6e6e6"></div><div class="label">Gelo</div></div>
+      <div class="card"><div class="swatch" style="background:#e0c997"></div><div class="label">Areia</div></div>
+      <div class="card"><div class="swatch" style="background:#999999"></div><div class="label">Platina</div></div>
+      <div class="card"><div class="swatch" style="background:#f25c1d"></div><div class="label">Laranja</div></div>
+      <div class="card"><div class="swatch" style="background:#ffd21c"></div><div class="label">Amarelo Segurança</div></div>
+      <div class="card"><div class="swatch" style="background:#e4162c"></div><div class="label">Vermelho Segurança</div></div>
+      <div class="card"><div class="swatch" style="background:#0073cf"></div><div class="label">Azul Segurança</div></div>
+      <div class="card"><div class="swatch" style="background:#7b4a1d"></div><div class="label">Conhaque</div></div>
+      <div class="card"><div class="swatch" style="background:#254117"></div><div class="label">Verde Colonial</div></div>
+      <div class="card"><div class="swatch" style="background:#1c2c59"></div><div class="label">Azul Del Rey</div></div>
+      <div class="card"><div class="swatch" style="background:#1f4019"></div><div class="label">Verde Folha</div></div>
+      <div class="card"><div class="swatch" style="background:#6d1915"></div><div class="label">Vermelho Goya</div></div>
+      <div class="card"><div class="swatch" style="background:#222"></div><div class="label">Preto Semi Fosco</div></div>
+      <div class="card"><div class="swatch" style="background:#b5b9b5"></div><div class="label">Cinza Claro</div></div>
+      <div class="card"><div class="swatch" style="background:#000"></div><div class="label">Preto</div></div>
+      <div class="card"><div class="swatch" style="background:#9d9d9d"></div><div class="label">Alumínio</div></div>
+      <div class="card"><div class="swatch" style="background:#111"></div><div class="label">Preto Fosco</div></div>
+      <div class="card"><div class="swatch" style="background:#555"></div><div class="label">Cinza Escuro</div></div>
+      <div class="card"><div class="swatch" style="background:#b39966"></div><div class="label">Ouro Antigo</div></div>
+    </div>
+  </section>
+
+  <!-- LINHA PISO (mantida) -->
+  <section>
+    <h2>
+      <img src="lata-imperatual.png" alt="Lata Esmalte Sintético" class="h2-image">
+      <span>LINHA PISO</span>
+    </h2>
+
+    <div class="grid" id="piso-grid">
+      <div class="card"><div class="swatch" style="background:#a0a0a0"></div><div class="label">Cinza Médio</div></div>
+      <div class="card"><div class="swatch" style="background:#999888"></div><div class="label">Concreto</div></div>
+      <div class="card"><div class="swatch" style="background:#555566"></div><div class="label">Cinza Chumbo</div></div>
+      <div class="card"><div class="swatch" style="background:#000000"></div><div class="label">Preto</div></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div>© 2025 Atual Tintas — Catálogo</div>
+  <a class="whatsapp-btn" href="https://wa.me/553432131821" target="_blank">Nos contate no WhatsApp</a>
+</footer>
+
+<div class="whatsapp-container">
+  <div class="whatsapp-balao">👋 Olá! Quer saber mais sobre nossos produtos?<br>Clique aqui e fale com a gente no WhatsApp.</div>
+  <a href="https://wa.me/553432131821" target="_blank">
+    <div class="whatsapp-botao">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </div>
+  </a>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const defaultWallColor = 'transparent';
+
+  // Mapeamento gridId -> visualizer layer id
+  const map = {
+    'acrilica-grid': 'acrilica-wall-color',
+    'imperatual-grid': 'imperatual-wall-color',
+    'borracha-grid': 'borracha-wall-color',
+    'manta-grid': 'manta-wall-color',
+    'esmalte-grid': 'esmalte-wall-color'
+  };
+
+  Object.keys(map).forEach(function(gridId) {
+    const grid = document.getElementById(gridId);
+    const layer = document.getElementById(map[gridId]);
+    if (!grid || !layer) return;
+    grid.querySelectorAll('.swatch').forEach(function(swatch) {
+      // hover preview
+      swatch.addEventListener('mouseover', function() {
+        const c = swatch.style.backgroundColor || swatch.style.background;
+        if (c) layer.style.backgroundColor = c;
+      });
+      // revert on mouseout
+      swatch.addEventListener('mouseout', function() {
+        layer.style.backgroundColor = defaultWallColor;
+      });
+      // remove focus highlight if keyboard-focused
+      swatch.addEventListener('focus', function() { swatch.blur(); });
+      // optional: allow click to set permanently (toggle)
+      swatch.addEventListener('click', function() {
+        // on click, set color and keep it until mouseout of other swatches
+        const c = swatch.style.backgroundColor || swatch.style.background;
+        if (c) layer.style.backgroundColor = c;
+      });
+    });
+  });
+
+  // Também protege swatches para não mostrarem outline em todos os navegadores
+  document.querySelectorAll('.swatch').forEach(function(s) {
+    s.setAttribute('tabindex', '0'); // torna focável por teclado (se necessário), mas blur logo evita outline
+    s.addEventListener('keydown', function(e) {
+      // suporte enter/space para selecionar via teclado
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        s.click();
+      }
+    });
+  });
+});
+</script>
+</body>
+</html>
